@@ -52,10 +52,23 @@ li>a:hover {
 
 .wrapper {
     margin-left: 7%;
-    height: 100vh;
 }
 
-.hero-left{
+.heroSection, .workSection{
+    height: 100vh;
+}
+/* .scrollDiv{
+    position: relative;
+  overflow-x: hidden;
+}
+
+.scrollText{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+  transition: transform 0.3s ease;
+} */
+.leftSection{
     padding-top: 150px;
     padding-left: 50px;
     padding-right: 50px;
@@ -79,8 +92,8 @@ li>a:hover {
     text-shadow: none;
     margin-top: 10px;
     color: white;
-    line-height: 56px;
-    font-size: 4vw;
+    line-height: 80px;
+    font-size: 7vw;
     font-weight: 700;
     display: inline-block;
 }
@@ -120,6 +133,13 @@ li>a:hover {
     color: white !important;
     font-size: 30px !important;
 }
+
+.h1-work{
+    color: white;
+    font-size: 2.6vw;
+}
+
+
 
 @media only screen and (max-width: 600px) {
     .nav-UL{
@@ -163,4 +183,43 @@ li>a:hover {
     .socials{
         flex-direction: row;
     }
+
+    .h1-header-filled{
+        font-size: 14vw;
+    }
+    .h1-work {
+    font-size: 8vw;
 }
+}
+.horizontal-line {
+    height: 1px;
+    border: 1px none white;
+    background-color: white;
+    border-radius: 0;
+    position: relative;
+    width: 95%;
+}
+
+.workDescription{
+    margin-top: 30px ;
+    margin-bottom: 30px ;
+    color: white;
+    font-weight: 300;
+}
+
+
+.role{
+    margin: 0px;
+    padding-top:10px ;
+    padding-bottom:10px ;
+    color: white;
+    font-weight: 300;
+}
+
+.verticalline {
+    width: 1px;
+    height: 100%;
+    background-color: white;
+    opacity: .6;
+}
+

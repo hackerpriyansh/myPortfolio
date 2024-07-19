@@ -10,15 +10,14 @@ const Homepage = ({ isMobile }) => {
                 </button>
             </div>
         
-            <section className='hero wrapper'>
+            <section className='heroSection'>
                 <div className="container-fluid h-100">
-                    <div className="row h-100">
-                        {/* Left column with text */}
-                        <div className={`col-md-6 hero-left ${isMobile ? 'p-3' : ''}`}>
+                    <div className="row  h-100">
+                        <div className={`col-md-6 leftSection ${isMobile ? 'p-3' : ''}`}>
                             <h1 className={`h1-header-borrder-2 higher ${isMobile ? 'gold' : ''}`} style={isMobile ? { fontSize: '8vw', WebkitTextStrokeColor: 'gold' } : {}}>
                                 Hi there, I'm
                             </h1>
-                            <h1 className="h1-header-filled" style={isMobile ? { fontSize: '14vw' } : {}}>
+                            <h1 className="h1-header-filled">
                                 Priyanshu Kushwaha
                             </h1>
                             <h1 className={`h1-header-borrder-2 higher ${isMobile ? 'gold' : ''}`} style={isMobile ? { fontSize: '6vw', WebkitTextStrokeColor: 'gold', lineHeight: '30px' } : {}}>
@@ -27,13 +26,13 @@ const Homepage = ({ isMobile }) => {
                             <p className="h1-header-description" style={isMobile ? { fontSize: '3vw' } : {}}>
                                 With extensive freelancing experience, I excel in integrating aesthetic design with seamless functionality to deliver compelling websites.
                             </p>
-                            <a className="btn btn-gold" style={isMobile ? { marginTop: '20px', width: '100%', padding: '10px' } : {}}>
+                            <a className="btn btn-gold" style={isMobile ? { marginTop: '20px', width: '100%', padding: '10px' } : {marginTop:'100px'}}>
                                 Reach out to Me
                             </a>
                         </div>
 
                         {/* Right column with animation */}
-                        <div className="col-md-6">
+                        <div className="col-md-6 d-flex">
                             <Lottie animationData={heroAnim} />
                         </div>
                     </div>

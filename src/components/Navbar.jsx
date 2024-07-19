@@ -1,4 +1,4 @@
-import { NavLink } from 'react-router-dom'
+import { Link } from 'react-scroll'
 
 const Navbar = () => {
     return (
@@ -13,16 +13,16 @@ const Navbar = () => {
                     <div className="offcanvas-body">
                         <nav className='Navbar'>
                             <ul className='nav-UL d-flex flex-column align-items-center'>
-                                <li><NavLink to="/" >Home</NavLink></li>
-                                <li><NavLink to="/work">Work</NavLink></li>
-                                <li><NavLink to="/about">About</NavLink></li>
-                                <li><NavLink to="/contact">Contact</NavLink></li>
-                                <li><NavLink to="/resume">CV</NavLink></li>
+                                <li><Link to="/" >Home</Link></li>
+                                <li><Link to="work">Work</Link></li>
+                                <li><Link to="about">About</Link></li>
+                                <li><Link to="contact">Contact</Link></li>
+                                <li><Link to="resume">CV</Link></li>
                                 <li>
                                     <ul className='socials p-0 d-flex  gap-4'>
-                                        <li><NavLink to="#insta"><i className="social-icon fa-brands fa-instagram"></i></NavLink></li>
-                                        <li><NavLink to="#insta"><i className="social-icon fa-solid fa-phone"></i></NavLink></li>
-                                        <li><NavLink to="#insta"><i className="social-icon fa-brands fa-linkedin-in"></i></NavLink></li>
+                                        <li><Link to="#insta"><i className="social-icon fa-brands fa-instagram"></i></Link></li>
+                                        <li><Link to="#insta"><i className="social-icon fa-solid fa-phone"></i></Link></li>
+                                        <li><Link to="#insta"><i className="social-icon fa-brands fa-linkedin-in"></i></Link></li>
                                     </ul>
                                 </li>
                             </ul>

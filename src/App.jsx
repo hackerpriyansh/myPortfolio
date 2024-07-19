@@ -1,13 +1,11 @@
 
 import Navbar from './components/Navbar'
 import './App.css'
-import Homepage from './pages/Homepage'
-import {
-  Routes, Route, BrowserRouter as Router,
-} from "react-router-dom";
-import About from './pages/About';
-import { useState, useEffect } from 'react';
+import Homepage from './components/Homepage'
+import About from './components/About';
+import Work from './components/Work';
 
+import { useState, useEffect } from 'react';
 const App = () => {
   const [isMobileDevice, setIsMobileDevice] = useState(false);
 
@@ -27,14 +25,12 @@ const App = () => {
   }, []);
   return (
     <>
-      <Router>
+      <div className="wrapper">
         <Navbar />
-        <Routes>
-            <Route path="/" element={<Homepage isMobile={isMobileDevice}/> } />
-            <Route path="/about" element={<About />} />
-          </Routes>
-      </Router>
-
+        <Homepage isMobile={isMobileDevice} />
+        <Work isMobile={isMobileDevice}/>
+        <About />
+      </div>
     </>
   )
 }

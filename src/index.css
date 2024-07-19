@@ -1,28 +1,17 @@
-@font-face {
-  font-family: 'Neue';
-  src: url('fonts/PPNeueMontreal-Medium.otf') format('otf'),
-  url('fonts/PPNeueMontreal-Bold.otf') format('otf'),
-  url('fonts/PPNeueMontreal-Thin.otf') format('otf')
-}
-
-:root {
-  --black: #121212;
-  --pitch-black: black;
-  --gold: #fed43a;
-  --white: white;
-  --slate-blue: #6c48c2;
-  --dim-grey: #707070;
-}
-
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+b{
+  font-weight: bold;
+}
+
 body{
-  font-family: 'Neue' , Arial, sans-serif;
-  background-color: var(--gold);
+
+  font-family: 'Poppins';
+  background-color: gold;
   font-weight: 500;
   line-height: 20px;
 }
