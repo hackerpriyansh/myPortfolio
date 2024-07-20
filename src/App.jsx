@@ -1,11 +1,13 @@
 
 import Navbar from './components/Navbar'
 import './App.css'
-import Homepage from './components/Homepage'
-import About from './components/About';
-import Work from './components/Work';
+import { Homepage } from './components/Homepage';
+import { About } from './components/About';
+import { Work } from './components/Work';
+import { Tools } from './components/Tools';
+import {React , useState, useEffect} from 'react';
+import Contact from './components/Contact';
 
-import { useState, useEffect } from 'react';
 const App = () => {
   const [isMobileDevice, setIsMobileDevice] = useState(false);
 
@@ -23,13 +25,17 @@ const App = () => {
       window.removeEventListener('resize', handleResize);
     };
   }, []);
+
+
   return (
     <>
       <div className="wrapper">
         <Navbar />
-        <Homepage isMobile={isMobileDevice} />
+        <Homepage isMobile={isMobileDevice}/>
         <Work isMobile={isMobileDevice}/>
-        <About />
+        <About isMobile={isMobileDevice}/>
+        <Tools isMobile={isMobileDevice} />
+        <Contact isMobile={isMobileDevice}/>
       </div>
     </>
   )

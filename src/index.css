@@ -11,7 +11,12 @@ b{
 body{
 
   font-family: 'Poppins';
-  background-color: gold;
+  background-color: #fed43a;
   font-weight: 500;
   line-height: 20px;
+}
+
+.text-left{
+  font-size: 14px;
+  text-align: left;
 }
