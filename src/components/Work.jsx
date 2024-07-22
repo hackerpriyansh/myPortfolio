@@ -4,7 +4,7 @@ import WorkLeft from './aboutComps/WorkLeft';
 import WorkRight from './aboutComps/WorkRight';
 export const Work = ({isMobile}) => {
     return (
-        <section className='workSection'>
+        <section id="work"  className='workSection'>
             <div className="container-fluid h-100">
                 <div className="row h-100">
                     {myWork.map((work, index) => (

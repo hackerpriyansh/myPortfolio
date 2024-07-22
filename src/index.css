@@ -4,12 +4,17 @@
   box-sizing: border-box;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 b{
   font-weight: bold;
 }
 
 body{
-
+  scrollbar-width: none;
+  -ms-overflow-style: none; 
   font-family: 'Poppins';
   background-color: #fed43a;
   font-weight: 500;
@@ -19,4 +24,8 @@ body{
 .text-left{
   font-size: 14px;
   text-align: left;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }

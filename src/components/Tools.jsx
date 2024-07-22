@@ -113,7 +113,7 @@ export const Tools = ({ isMobile }) => {
 
 
     return (
-        <section className='toolSection' >
+        <section className='toolSection' id="tools">
             <div className="container-fluid h-100">
                 <div className="row h-100">
                     <div className="col leftSection"  style={{background: 'linear-gradient(to right, black 50%, #fed43a 50%)' }}>

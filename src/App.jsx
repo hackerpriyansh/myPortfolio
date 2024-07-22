@@ -5,7 +5,7 @@ import { Homepage } from './components/Homepage';
 import { About } from './components/About';
 import { Work } from './components/Work';
 import { Tools } from './components/Tools';
-import {React , useState, useEffect} from 'react';
+import {useState, useEffect} from 'react';
 import Contact from './components/Contact';
 
 const App = () => {

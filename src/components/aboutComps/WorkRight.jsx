@@ -10,7 +10,7 @@ const WorkRight = ({ isMobile, index, websiteUrl }) => {
   return (
     <div className={!isMobile ? 'iframe-container d-flex align-items-center justify-content-center' : 'd-none'}>
       <iframe
-      
+        autoPlay='0'
         src={websiteUrl}
         className={!isMobile ? 'work-image' : 'd-none'}
         width="90%"

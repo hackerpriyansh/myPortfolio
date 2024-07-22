@@ -28,7 +28,7 @@ export const About = ({ isMobile }) => {
   ];
 
   return (
-    <section className='aboutSection'>
+    <section id='about' className='aboutSection'>
       <div className="container-fluid h-100">
         <div className="row h-100">
           <div className="col-md-6 leftSection">

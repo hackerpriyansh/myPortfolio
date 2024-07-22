@@ -1,6 +1,7 @@
 
 import work1 from '../assets/images/work1.png'
 import work2 from '../assets/images/work2.png'
+import work3 from '../assets/images/work3.png'
 
 const myWork = [
     {
@@ -22,13 +23,13 @@ const myWork = [
       websiteUrl: 'https://www.bpve.in/'
     },
     {
-      title: "TravelBud.in",
-      tagline: 'Perfect Stays for your percious holidays.',
-      description: "TravelBud, powered by ReactJS, is your go-to platform for discovering accommodations and listing stays. Users can easily find their ideal lodging while hosts manage their properties efficiently.",
-      imageURL: work2,
-      technologiesUsed: ['ReactJs', 'AWS' ,'Firebase', 'Google Maps '],
-      role: ["Website Developer"],
-      websiteUrl: 'https://travelbud.in/dashboardScreen'
+      title: "Beauty Expo",
+      tagline: 'The Beauty Expo will be a two-day event that will celebrate beauty in all forms.',
+      description: "A Minimal and Professional website to showcase your beauty talent infront of India",
+      imageURL: work3,
+      technologiesUsed: ['WordPress', 'Php', 'Html', 'CSS', 'Js'],
+      role: ["Website Developer", "UI/UX Designer"],
+      websiteUrl: 'https://beautyexpo.in/'
     },
   ]
   
